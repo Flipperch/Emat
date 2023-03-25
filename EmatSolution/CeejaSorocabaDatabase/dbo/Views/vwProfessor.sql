@@ -1,0 +1,14 @@
+﻿CREATE VIEW [dbo].[vwProfessor]
+	AS SELECT 
+		Professor.[CODIGO] ID,
+		[COD_DISCIPLINA] DisciplinaId
+	FROM 
+		PROFESSOR Professor
+	--JOIN
+	--	USUARIO Usuario
+	--ON 
+	--	PROFESSOR.CODIGO = USUARIO.CODIGO
+	--JOIN
+	--	DISCIPLINA Disciplina
+	--ON
+	--	PROFESSOR.COD_DISCIPLINA = DISCIPLINA.CODIGO
