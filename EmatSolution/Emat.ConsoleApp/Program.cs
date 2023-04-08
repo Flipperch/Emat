@@ -8,6 +8,15 @@ using Emat.Services.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using Serilog;
+
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .CreateLogger();
+
+Log.Information("A Bagaça começou...");
+
 
 using IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureHostConfiguration(configHost =>
@@ -29,7 +38,9 @@ using IHost host = Host.CreateDefaultBuilder(args)
         //Applications
         services.AddTransient<IGerenciadorUsuarios, GerenciadorUsuarios>();
     })
+    .UseSerilog()
     .Build();
+
 
 Console.WriteLine("Flipper Emat Console!");
 

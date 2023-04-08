@@ -1,6 +1,6 @@
 ﻿CREATE VIEW [dbo].[vwMatricula]
 	AS SELECT 
-		[CODIGO] ID,
+		[CODIGO] MatriculaId,
 		[N_MAT] MumeroMatricula,
 		[COD_ENSINO] EnsinoId, 
 		[ATUAL] Atual, 

@@ -218,8 +218,12 @@
     <Build Include="dbo\Views\vwMatricula.sql" />
     <Build Include="dbo\Views\vwProfessor.sql" />
     <Build Include="dbo\Views\vwUsuario.sql" />
+    <Build Include="dbo\Tables\tbRaNormalizado.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Snapshots\CeejaSorocabaDatabase_20230325_12-06-39.dacpac" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="CeejaSorocabaDatabase.refactorlog" />
   </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 ﻿CREATE VIEW [dbo].[vwEnsino]
 	AS SELECT 
-		[CODIGO] ID,
+		[CODIGO] EnsinoId,
 		[NOME_ENSINO] NomeEnsino
 	FROM
 		ENSINO Ensino
